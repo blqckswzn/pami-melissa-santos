@@ -1,23 +1,19 @@
-let n1 = 2;
-let n2 = 5;
-//Pascal Case = NomeVariavel (primeira letra sempre maiuscula)
-// Camel Case = nomerVariavel( primeira letra da palavra é minuscula e o restante começa com maiuscula)
-//Kebab Case = nome-variavel (tnão faz diferenç ao maiusculo ou minusculo, mas tem q separar com -)
-// Snake Case = nome_variavel (fds o maiusculo ou minusculo, mas tem queseparar com ' _ ')
-
-function soma(){
-    console.log ( 5 + 18 );
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+// Funcao que retorna tipos
+function saudacao(nome) {
+    return `ola, ${nome}!`;
 }
-
-soma();
-//função simples que não recebe parametros 
-
-
-function SomaComParametros(v1, v2){
-    let resultado = v1 + v2; 
-    return resultado;
-    
+console.log(saudacao('leandro'));
+// utulizando a interface usuario fica assim:
+function exibirUsuario(usuario) {
+    console.log(`nome: ${usuario.nome}`);
+    console.log(`idade: ${usuario.idade}`);
 }
-
-console.log (SomaComParametros(n1, n2));
-
+exibirUsuario({ nome: 'marcos', idade: 22 });
+// Exemplo de uma funcao que retorna arrays e tem parametros opcionais
+function listaNomes(nome) {
+    nome.forEach(nome => console.log(nome));
+}
+listaNomes(['ana', 'bruno', 'carlos']);
+//# sourceMappingURL=funcoes.js.map
